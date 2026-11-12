@@ -7,7 +7,7 @@ description: >
   user's Job Hunt Profile, and reports any requirements the user doesn't meet instead of
   overstating them.
 metadata:
-  version: "0.3.3"
+  version: "0.4.0"
 ---
 
 # Build Resume
@@ -49,12 +49,13 @@ If repo verification is on and the user's computer is linked, you may recheck th
 
 ## 5. Build
 
-1. Read the docx skill's SKILL.md if one is listed.
-2. In a working folder, write the spec described in `references/spec-format.md`, using the profile's resume style (see `references/styles.md`), paper size (A4 or Letter) and any accent, font, headline or section-title overrides. If the user asks for a different style for one job, use it for that build only; change the profile only if they say so.
-3. In that folder, run `npm install docx@9` if it isn't installed yet (this is the only package the plugin installs), then `node ${CLAUDE_PLUGIN_ROOT}/skills/build-resume/scripts/build.js spec.json "<Name>_Resume_<Company>.docx"` (if `${CLAUDE_PLUGIN_ROOT}` is empty in the shell, use this plugin's root folder: the one that contains its `skills/` folder). If the script reports spec problems, fix the spec and rerun.
-4. Validate the .docx (the docx skill's validator if available). Convert to PDF with LibreOffice and check it's exactly **one page** with `pdfinfo`. If it overflows: tighten wording, drop the least relevant project or bullet, move older roles to "Earlier experience", or rerun with size 19 (9.5pt); the compact style is already at 19, so for compact go straight to trimming content. Never drop a true must-have match or a real role to fit. If LibreOffice isn't available, skip this check and the preview in step 5, send the .docx only, and tell the user the one-page check was skipped.
-5. Render a preview image of the PDF and look at it; fix wrapping or orphaned lines.
-6. Send the files with SendUserFile. For a batch, zip them and send the zip.
+The user wants a Word file here, so build a .docx even when Claude's own document tools are available.
+
+1. Read `references/styles.md` (the formatting rules) and Claude's built-in docx (Word) skill's SKILL.md. The docx skill is how the file gets made; this plugin ships no code of its own. If no docx skill is listed, tell the user the resume can't be built as a Word file in this session and offer the tailored resume text instead.
+2. Build the resume with the docx skill, following `references/styles.md` exactly for the profile's style, paper size (Letter or A4) and any accent, font, headline, section-title or section-order preferences. If the user asks for a different style for one job, use it for that build only; change the profile only if they say so. Name the file `<Name>_Resume_<Company>.docx`.
+3. Convert to PDF and check it's exactly **one page**, as the docx skill describes. If it overflows: tighten wording, drop the least relevant project or bullet, move older roles to "Earlier Experience", then drop body text to 9.5pt (compact is already at 9.5pt, so trim content instead). Never drop a true must-have match or a real role to fit, and never go below 9.5pt. If PDF conversion isn't available, send the .docx only and tell the user the one-page check was skipped.
+4. Render a preview image of the PDF and look at it. Check it against the style's rules (name, colors, header style, right-aligned dates, real bullets, clickable links) and fix wrapping or orphaned lines.
+5. Send the files with SendUserFile. For a batch, zip them and send the zip.
 
 ## 6. Report
 

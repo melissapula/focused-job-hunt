@@ -6,7 +6,7 @@ description: >
   job platforms in the user's Job Hunt Profile for roles that fit their skills and filters,
   removes ones already in their tracker, and returns a ranked shortlist plus a checklist doc.
 metadata:
-  version: "0.3.3"
+  version: "0.4.0"
 ---
 
 # Job Search

@@ -1,8 +1,8 @@
 # Privacy Policy
 
-Last updated: November 12, 2026
+Last updated: November 12, 2026 (version 0.4.0)
 
-Focused Job Hunt is a Claude plugin made of written instructions (skills) and one local resume-building script. It has no server, no database and no analytics, and its author never receives your data.
+Focused Job Hunt is a Claude plugin made entirely of written instructions (skills); it contains no code. It has no server, no database and no analytics, and its author never receives your data.
 
 ## What the plugin reads
 
@@ -23,7 +23,7 @@ When you ask it to, Claude reads:
 
 - The plugin sends your data to no service outside your own Claude account and the apps you connected (Gmail, Chrome, Claude Docs).
 - It never sends, replies to, archives, deletes or labels email, never applies, messages or withdraws on job sites, and never signs in for you. Those actions happen only if you ask Claude in chat.
-- Before building the first resume, Claude installs the open-source `docx` package from the public npm registry into its own workspace. Your data is not sent with that download.
+- The plugin contains no code. Resumes are made with Claude's built-in Word (docx) skill inside Claude's own workspace.
 
 ## Sensitive details
 

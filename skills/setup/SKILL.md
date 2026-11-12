@@ -7,7 +7,7 @@ description: >
   their career profile, job filters and job platforms to a Claude Doc, and creates their
   Job Application Tracker doc.
 metadata:
-  version: "0.3.3"
+  version: "0.4.0"
 ---
 
 # Focused Job Hunt Setup
@@ -48,7 +48,7 @@ Collect, in this order:
    - Code-repo verification of project details when their computer is linked.
    - A second email inbox checked in the browser (for example Yahoo or Outlook web). Mention that opening a message there can mark it as read.
 10. **Job platforms:** which boards they use (for example LinkedIn, Indeed, Glassdoor, a state job bank, field-specific boards) and which they're signed into in Chrome.
-11. **Resume preferences:** offer the four styles described in `${CLAUDE_PLUGIN_ROOT}/skills/build-resume/references/styles.md` (classic, minimal, modern, compact). To show them: copy `${CLAUDE_PLUGIN_ROOT}/skills/build-resume/references/sample-spec.json` (software example) or `sample-spec-nursing.json` (non-technical example, whichever is closer to the user's field) from the same folder into a working folder, run `npm install docx@9` there, make one copy per style with `"style"` set, build each with `node ${CLAUDE_PLUGIN_ROOT}/skills/build-resume/scripts/build.js <copy>.json <style>.docx` (if `${CLAUDE_PLUGIN_ROOT}` is empty in the shell, use this plugin's root folder: the one that contains its `skills/` folder), convert to PDF, and send the PDFs or a side-by-side preview image. If LibreOffice isn't available, describe the styles from `styles.md` and send the .docx files instead. Record their pick (default classic), paper size (A4 or Letter; suggest Letter for the US and Canada and A4 elsewhere), any accent color or font override, an optional one-line headline, and which sections to include and their titles (for example "Clinical Experience" or "Teaching Experience" instead of "Experience").
+11. **Resume preferences:** offer the four styles in the build-resume skill's `references/styles.md` (classic, minimal, modern, compact). To show them, build that folder's `sample-resume-software.md` or `sample-resume-nursing.md` (whichever is closer to the user's field) once per style, following the build-resume skill's step 5 and the rules in `styles.md`, and send the PDFs or a side-by-side preview image. If Word or PDF output isn't available in this session, describe the styles from `styles.md` instead. Record their pick (default classic), paper size (A4 or Letter; suggest Letter for the US and Canada and A4 elsewhere), any accent color or font override, an optional one-line headline, and which sections to include and their titles (for example "Clinical Experience" or "Teaching Experience" instead of "Experience").
 
 ## 3. Optional repo verification
 

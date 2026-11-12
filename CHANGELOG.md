@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+- The plugin no longer ships any code. Resumes are built with Claude's built-in Word (docx) skill from written formatting rules (`skills/build-resume/references/styles.md`) that define the four styles exactly.
+- Sample resumes for previewing styles are now readable Markdown (software and nursing examples).
+
 ## 0.3.3
 - Added a privacy policy (PRIVACY.md), linked from the README and plugin settings.
 

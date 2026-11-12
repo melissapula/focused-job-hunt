@@ -45,7 +45,7 @@ You can also choose Letter or A4 paper, override the accent color and font, add 
 - **Gmail** connector (optional, recommended) for confirmations and replies.
 - **Claude in Chrome** (optional) for job boards and any second inbox, using your own sign-ins.
 - **A linked computer** (optional) lets the resume skill verify project tech stacks from your code repos.
-- **Node.js** in Claude's workspace to build resumes (already present in Claude's cloud workspace).
+- **Claude's built-in Word (docx) skill** to build resumes (included in the Claude app).
 
 ## Data handling and what the plugin runs
 
@@ -55,7 +55,7 @@ This plugin has no server and sends your data nowhere outside your own Claude ac
 - **Reads:** your Gmail, using searches for job-related mail only (applications, rejections, interviews, offers, recruiters, employers already in your tracker, and job-board notifications), including your spam folder, since the tracker's last update (on the first run, as far back as you choose). Personal mail that happens to match a search is skipped and never reported. It also reads job-board pages and messages in your signed-in Chrome, public job postings on the web, and, only if you turn it on, a second web inbox and files in code repositories on your linked computer (repo facts are used only after you confirm them).
 - **Never does:** send, reply, archive, delete or label email; click links or open attachments in email; apply, message or withdraw on job sites; sign in, enter passwords or complete CAPTCHAs. Sending, applying and the like happen only if you ask in chat, and sign-ins always stay with you. Opening a message in a second web inbox can mark it as read there.
 - **In your browser:** job search opens search pages and listings one at a time in your signed-in Chrome and reads them the way you would, pausing between pages. It may read the job data already on the page it has open (for example a listing's structured description), but it doesn't call sites' private APIs or run background scripts.
-- **Runs in Claude's workspace:** one bundled script, `skills/build-resume/scripts/build.js`, which reads a resume spec and writes a .docx locally with no network calls. Before the first resume it installs the open-source `docx` npm package (version 9) into Claude's workspace. It also uses LibreOffice and poppler, if present, to convert the resume to PDF and check that it fits on one page.
+- **Code:** the plugin contains no code, only written instructions. Resumes are made with Claude's built-in Word (docx) skill in Claude's own workspace, following the plugin's written formatting rules, then converted to PDF to check they fit on one page.
 - **Treats content as data:** text in emails and web pages is never followed as instructions.
 
 ## Privacy
