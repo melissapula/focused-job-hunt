@@ -1,0 +1,16 @@
+{
+  "name": "focused-job-hunt",
+  "description": "Focused Job Hunt: an honest, end-to-end job search plugin for Claude.",
+  "owner": {
+    "name": "Melissa Freundschuh-Pula",
+    "url": "https://github.com/melissapula"
+  },
+  "plugins": [
+    {
+      "name": "focused-job-hunt",
+      "source": "./",
+      "description": "An honest, end-to-end job search: setup interview, job search, tailored resumes in four styles, and an application tracker.",
+      "version": "0.3.0"
+    }
+  ]
+}
