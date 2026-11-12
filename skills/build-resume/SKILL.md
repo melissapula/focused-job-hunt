@@ -7,7 +7,7 @@ description: >
   user's Job Hunt Profile, and reports any requirements the user doesn't meet instead of
   overstating them.
 metadata:
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Build Resume

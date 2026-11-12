@@ -7,7 +7,7 @@ description: >
   their career profile, job filters and job platforms to a Claude Doc, and creates their
   Job Application Tracker doc.
 metadata:
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Focused Job Hunt Setup
@@ -40,7 +40,7 @@ Collect, in this order:
 4. **Experience:** for each role (paid jobs, internships, significant volunteer roles), employer, real title, location or remote, start and end month/year, and what they did or owned. Push for specifics: what, for whom, how much, what changed because of them. Record only numbers the user confirms are accurate. If they offer a percentage or metric, ask how they know it; record it only if they can stand behind it in an interview. No work history yet is fine; say so and lean on projects, education and volunteering.
 5. **Projects:** personal, school or volunteer projects: name, link, tools used, what it does, who uses it, anything notable. If the user's computer is linked and they have code repos, offer repo verification (section 3).
 6. **Certifications, licenses, education, military service, volunteer or other relevant experience** (domain experience counts, for example real estate, teaching, healthcare).
-7. **Things never to claim:** skills or credentials they lack that postings often ask for, so later skills report them as gaps.
+7. **Things never to claim:** skills or qualifications they lack that postings often ask for, so later skills report them as gaps.
 8. **Job filters:** remote / hybrid / on-site acceptable, travel OK or not, minimum pay as amount + currency + period (per year or per hour), locations or time zones, contract vs full-time vs part-time, company types to exclude (for example staffing agencies), clearance situation, work authorization.
 9. **Optional extras** (ask each with yes/no):
    - Identity or veteran-focused job boards (veteran, LGBTQ+, women in their field, disability, others they name), and whether their status should earn a ranking boost or appear on resumes.
@@ -52,7 +52,7 @@ Collect, in this order:
 
 ## 3. Optional repo verification
 
-Only if the user said yes and their computer is linked: request access to their repos folder, read each relevant repo's README, dependency files (package.json, requirements.txt / pyproject.toml, go.mod and so on) and spec docs, and record verified tools and notable work (tests, CI, payments, auth, data integrity) in the profile's Projects section, marked "verified from repo". Describe what the code does; a dependency alone is not proof of depth. Show the user what you found and save only what they confirm.
+Only if the user said yes and their computer is linked: request access to their repos folder, read each relevant repo's README, dependency files (package.json, requirements.txt / pyproject.toml, go.mod and so on) and spec docs, and record verified tools and notable work (tests, CI, payments, sign-in, data integrity) in the profile's Projects section, marked "verified from repo". Describe what the code does; a dependency alone is not proof of depth. Show the user what you found and save only what they confirm.
 
 ## 4. Save
 

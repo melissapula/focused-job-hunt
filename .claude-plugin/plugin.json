@@ -1,6 +1,6 @@
 {
   "name": "focused-job-hunt",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "An honest, end-to-end job search: a setup interview builds your profile, then search your job boards for fitting roles, build tailored one-page resumes in your choice of style from verified facts only, and keep an application tracker up to date from your email and job sites.",
   "author": { "name": "Melissa Freundschuh-Pula", "url": "https://github.com/melissapula" },
   "homepage": "https://github.com/melissapula/focused-job-hunt",

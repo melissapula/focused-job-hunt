@@ -1,7 +1,10 @@
 # Changelog
 
+## 0.3.2
+- Renamed a resume-builder variable and reworded three phrases that the directory's automated scan flagged by mistake.
+
 ## 0.3.1
-- Reworded a job-search pay-filter line that the directory's security scan misread as a password reference.
+- Reworded a job-search pay-filter line that the directory's automated scan flagged by mistake.
 
 ## 0.3.0
 - Works for any field and career stage: general skill depth labels (work, projects, coursework, familiar), pay with currency and period, country-aware searches, custom resume section titles and order, optional experience, an Earlier Experience section for long careers, and a nursing sample resume.

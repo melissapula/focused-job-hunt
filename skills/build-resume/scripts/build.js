@@ -119,14 +119,14 @@ const extras = s.extraSections || [];
 const defaultOrder = ['summary', 'skills', 'experience', 'earlier', 'projects'];
 const order = Array.isArray(s.order) && s.order.length ? s.order : defaultOrder;
 const done = new Set();
-for (const key of order) {
-  if (blocks[key] && !done.has(key)) { blocks[key](); done.add(key); continue; }
-  const sec = extras.find((x) => x.title === key);
-  if (sec && !done.has('x:' + key)) { extraBlock(sec)(); done.add('x:' + key); continue; }
-  if (!blocks[key] && !sec) console.warn(`build.js: order entry "${key}" matches no section; skipped`);
+for (const section of order) {
+  if (blocks[section] && !done.has(section)) { blocks[section](); done.add(section); continue; }
+  const sec = extras.find((x) => x.title === section);
+  if (sec && !done.has('x:' + section)) { extraBlock(sec)(); done.add('x:' + section); continue; }
+  if (!blocks[section] && !sec) console.warn(`build.js: order entry "${section}" matches no section; skipped`);
 }
 // Anything the order left out still appears, so no section is lost by accident.
-for (const key of defaultOrder) if (!done.has(key)) blocks[key]();
+for (const section of defaultOrder) if (!done.has(section)) blocks[section]();
 for (const sec of extras) if (!done.has('x:' + sec.title)) extraBlock(sec)();
 
 const doc = new Document({

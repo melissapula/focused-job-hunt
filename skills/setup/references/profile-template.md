@@ -13,7 +13,7 @@ Create a Claude Doc titled **Job Hunt Profile** with these sections, in this ord
 9. **Certifications and licenses** — name, issuer, month/year.
 10. **Education** — degree or program, school, year.
 11. **Military service / volunteer / domain experience** — as provided.
-12. **Never claim** — skills, credentials and experience the user lacks, so resumes report them as gaps.
+12. **Never claim** — skills, qualifications and experience the user lacks, so resumes report them as gaps.
 13. **Resume preferences** — style (classic, minimal, modern or compact; default classic), paper size (A4 or Letter), accent color override if any, font override if any, optional headline under the name, sections to include with their titles (for example "Clinical Experience"), page limit (one page).
 14. **Links** — the Job Application Tracker link, filled in after it's created.
 

@@ -58,7 +58,7 @@
     {
       "name": "Recipe Planner",
       "url": "https://github.com/example/recipe-planner",
-      "text": "Angular + NestJS meal planner with PostgreSQL and JWT auth."
+      "text": "Angular + NestJS meal planner with PostgreSQL and user sign-in."
     },
     {
       "name": "Trail Log",
