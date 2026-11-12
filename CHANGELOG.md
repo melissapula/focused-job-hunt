@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.1
+- Reworded a job-search pay-filter line that the directory's security scan misread as a password reference.
+
 ## 0.3.0
 - Works for any field and career stage: general skill depth labels (work, projects, coursework, familiar), pay with currency and period, country-aware searches, custom resume section titles and order, optional experience, an Earlier Experience section for long careers, and a nursing sample resume.
 - Email reading limited to job-related searches (spam included); personal mail is never reported. Never clicks email links or attachments.

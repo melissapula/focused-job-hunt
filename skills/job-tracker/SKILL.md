@@ -7,7 +7,7 @@ description: >
   updates their Job Application Tracker doc with new applications, status changes, recruiter
   leads and follow-ups.
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Job Tracker

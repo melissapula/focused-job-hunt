@@ -6,7 +6,7 @@ description: >
   job platforms in the user's Job Hunt Profile for roles that fit their skills and filters,
   removes ones already in their tracker, and returns a ranked shortlist plus a checklist doc.
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Job Search
@@ -33,7 +33,7 @@ Read the chrome-browser skill before the first browser step if one is listed. Lo
 
 Open each promising listing and read the full description; headline "Remote" tags are often wrong.
 
-- Drop roles that fail a must-have filter: work arrangement (check the body for hybrid, in-office days or location limits that exclude the user), pay floor (pass if the top of the range meets it; flag ranges whose bottom is below it; include "pay not listed" only for strong fits), excluded company types, clearance or license requirements the user can't meet.
+- Drop roles that fail a must-have filter: work arrangement (check the body for hybrid, in-office days or location limits that exclude the user), pay floor (keep the role if the top of its pay range meets the floor; flag ranges whose bottom is below it; include "pay not listed" only for strong fits), excluded company types, clearance or license requirements the user can't meet.
 - If scam and fit filters are on: drop gig-style listings and staffing reposts without a named employer, and flag likely scams (vague company, off-platform chat interviews, pay far above the norm, requests for personal or financial information). Recruiter postings for a named employer are fine; label them.
 - Merge the same role found on several sites and keep the best link, ideally the employer's own careers page.
 - Remove anything already in the tracker.
