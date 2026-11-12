@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.3
+- Added a privacy policy (PRIVACY.md), linked from the README and plugin settings.
+
 ## 0.3.2
 - Renamed a resume-builder variable and reworded three phrases that the directory's automated scan flagged by mistake.
 

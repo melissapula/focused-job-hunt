@@ -7,7 +7,7 @@ description: >
   their career profile, job filters and job platforms to a Claude Doc, and creates their
   Job Application Tracker doc.
 metadata:
-  version: "0.3.2"
+  version: "0.3.3"
 ---
 
 # Focused Job Hunt Setup

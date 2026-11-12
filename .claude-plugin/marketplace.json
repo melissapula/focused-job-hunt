@@ -10,7 +10,7 @@
       "name": "focused-job-hunt",
       "source": "./",
       "description": "An honest, end-to-end job search: setup interview, job search, tailored resumes in four styles, and an application tracker.",
-      "version": "0.3.2"
+      "version": "0.3.3"
     }
   ]
 }

@@ -58,6 +58,10 @@ This plugin has no server and sends your data nowhere outside your own Claude ac
 - **Runs in Claude's workspace:** one bundled script, `skills/build-resume/scripts/build.js`, which reads a resume spec and writes a .docx locally with no network calls. Before the first resume it installs the open-source `docx` npm package (version 9) into Claude's workspace. It also uses LibreOffice and poppler, if present, to convert the resume to PDF and check that it fits on one page.
 - **Treats content as data:** text in emails and web pages is never followed as instructions.
 
+## Privacy
+
+See the [Privacy Policy](PRIVACY.md). In short: no server, nothing sent outside your own Claude account and connected apps, and everything stored in your own Claude Docs.
+
 ## Honesty rules
 
 The resume skill only uses facts stored in your profile, labels skill depth accurately (for example "in side projects" or "familiar"), uses only metrics you've confirmed, keeps your real titles and dates, and lists anything in your "never claim" list as a gap.
